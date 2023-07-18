@@ -110,12 +110,11 @@ class Solution:
     def encrypt(self, message):
             out = ""
             for char in message:
-                 if char == " ":
-                    out += " "
-                 else:
-                    out = out + MORSE_CODE_DICT[char.upper()]
+            
+               
+                    out = out + MORSE_CODE_DICT[char.upper()] +" "
         
-            return out
+            return out[:-1]
 
 
 def main():
