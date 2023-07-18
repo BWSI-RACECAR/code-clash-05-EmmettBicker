@@ -113,9 +113,9 @@ class Solution:
                  if char == " ":
                     out += " "
                  else:
-                    out = out + MORSE_CODE_DICT[char]
+                    out = out + MORSE_CODE_DICT[char.upper()]
         
-            return out[:-1]
+            return out
 
 
 def main():
