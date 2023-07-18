@@ -90,7 +90,7 @@ morse_to_string = {
 
 }
 class Solution:    
-    def morse(self, message):
+    def encrypt(self, message):
             out = ""
             for char in message:
                  if char == " ":
