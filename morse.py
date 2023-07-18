@@ -93,7 +93,10 @@ class Solution:
     def morse(self, message):
             out = ""
             for char in message:
-                 out = out + morse_to_string[char] + " "
+                 if char == " ":
+                    out += " "
+                 else:
+                    out = out + morse_to_string[char]
         
             return out[:-1]
 
